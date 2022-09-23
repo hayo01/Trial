@@ -8,7 +8,13 @@ public class MyList<E> {
     private Item firstItem;
     private Item lastItem;
 
-
+    /*
+    1. 문자열을 모두 소문자로 변환
+    2. for문을 사용하여 두 비교대상의 각 자리별 문자의 Ascii 코드 비교
+    2-1. Integer.parseInt() 와 .charAt() 활용 >> 문자를 Ascii 코드로 변환
+    3. (A값 - B값) 의 결과가 음수이면, B>A
+                         양수이면, A>B
+     */
     public Item sort(String name){
         int midItemNo = length/2;
         Item midItem = firstItem;
@@ -19,7 +25,7 @@ public class MyList<E> {
             count++;
         }
 
-        
+
 
         return null;
     }

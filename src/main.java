@@ -1,6 +1,8 @@
 public class main {
     public static void main(String[] args) {
-        int i = 13/2;
-        System.out.println(i);
+        String a = "A";
+        String b = "b";
+        System.out.println((int)a.charAt(0));
+        System.out.println((int)b.charAt(0));
     }
 }
